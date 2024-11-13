@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MyButton from "../../myButton/MyButton";
+import MyButton from "../../components/myButton/MyButton";
 
 // let count = 0
 function Feedback() {
