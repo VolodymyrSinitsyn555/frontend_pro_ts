@@ -1,0 +1,33 @@
+.gridLessonContainer {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 80px;
+    gap: 5px;
+  }
+  
+  .gridLessonContainer a {
+    text-decoration: none;
+  }
+  
+  .gridLessonContainer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(115, 96, 255);
+    color: white;
+  }
+  
+  .gridLessonContainer div:hover {
+    background-color: rgb(171, 165, 219);
+  }
+  
+  .homework{
+    background-color: #579249 !important;
+  }
+
+  .homework:hover{
+    background-color: #9ebd96 !important;
+  }

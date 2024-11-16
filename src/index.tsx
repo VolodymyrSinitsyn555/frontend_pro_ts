@@ -1,28 +1,26 @@
-import ReactDOM from 'react-dom/client';
-import './index.css';
-// import Lesson06 from "./lessons/lesson06/Lesson06";
-// import Lesson07 from "./lessons/lesson07/Lesson07";
-// import Lesson04 from './lessons/lesson04/Lesson04';
-// import FetchDog from './components/fetchDog/FetchDog';
-// import FetchFox from './components/fetchFox/FetchFox';
-// import Lesson01 from './lessons/lesson01/Lesson01';
-import Lesson10 from './lessons/lesson10/Lesson10';
-
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import Layout from "./layout/Layout";
+import Lesson01 from "./lessons/lesson01/Lesson01";
+import HomePage from "./components/HomePage/HomePage";
+import Lesson08 from "./lessons/lesson08/Lesson08";
+import Lesson10 from "./lessons/lesson10/Lesson10";
+import Homework03 from "./homeworks/homework03/Homework03";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
-  <>
-  {/* <Lesson04/> */}
-    {/* <Lesson06/> */}
-    {/* <Lesson07/> */}
-    {/* <FetchDog/> */}
-    {/* <FetchFox/> */}
-    <Lesson10/>
-  </>
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="lesson-1" element={<Lesson01 />} />
+        <Route path="lesson-10" element={<Lesson10 />} />
+        <Route path="homework-3" element={<Homework03/>} />
+
+      </Route>
+    </Routes>
+  </HashRouter>
 );
-
-
-
-
