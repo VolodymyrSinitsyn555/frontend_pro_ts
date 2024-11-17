@@ -38,15 +38,8 @@ export default function Homework12() {
       </form>
       {genderInfo && (
         <div>
-          <p>
-            <strong>Name:</strong> {genderInfo.name}
-          </p>
-          <p>
-            <strong>Gender:</strong> {genderInfo.gender}
-          </p>
-          <p>
-            <strong>Probability:</strong> {genderInfo.probability}
-          </p>
+          <p>Name: {genderInfo.name}</p>
+          <p>Gender: {genderInfo.gender}</p>
         </div>
       )}
     </div>
