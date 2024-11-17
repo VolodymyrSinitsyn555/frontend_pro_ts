@@ -18,7 +18,7 @@ export default function FetchFox(): JSX.Element {
     setTimeout(() => {
       setImage(data.image);
       setLoading(false);
-    }, 1000);
+    }, 700);
   };
 
   // useEffect(() => {
