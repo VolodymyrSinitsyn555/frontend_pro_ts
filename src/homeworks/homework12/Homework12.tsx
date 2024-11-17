@@ -1,5 +1,5 @@
-import { useFormik, useFormikContext } from "formik";
-import React, { useState } from "react";
+import { useFormik } from "formik";
+import { useState } from "react";
 import MyButton from "../../components/myButton/MyButton";
 
 interface IGenderize {
