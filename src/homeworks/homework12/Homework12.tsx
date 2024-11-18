@@ -6,8 +6,14 @@ interface IGenderize {
   firstName: string;
 }
 
+interface IGenderInfo{
+  name: string
+  gender: string
+  probability: number
+}
+
 export default function Homework12() {
-  const [genderInfo, setGenderInfo] = useState<any>(" - ");
+  const [genderInfo, setGenderInfo] = useState<IGenderInfo>();
 
   const formik = useFormik({
     initialValues: {
@@ -40,6 +46,7 @@ export default function Homework12() {
         <div>
           <p>Name: {genderInfo.name}</p>
           <p>Gender: {genderInfo.gender}</p>
+          <p>Probability: {genderInfo.probability}</p>
         </div>
       )}
     </div>
