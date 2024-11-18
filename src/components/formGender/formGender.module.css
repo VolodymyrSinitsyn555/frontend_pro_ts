@@ -1,0 +1,25 @@
+.genderForm {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+
+.inputContainer {
+  position: relative;
+}
+
+.inputWrapper {
+  width: 100%; 
+}
+
+.error {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  left: calc(100% + 10px); 
+  color: red;
+  font-size: 12px;
+  white-space: nowrap; 
+}
+

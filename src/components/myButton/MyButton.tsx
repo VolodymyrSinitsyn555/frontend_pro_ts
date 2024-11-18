@@ -6,6 +6,7 @@ interface IMyButtonProps {
   isDanger?: boolean
   myType?: "button" | "submit" | "reset"
   func?: () => void
+  className?: string
 }
 
 const handleDefaultClick = () => {
